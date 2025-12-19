@@ -1,0 +1,49 @@
+.analytics-container {
+  max-width: 1400px;
+}
+
+.period-selector {
+  background: white;
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  margin-bottom: var(--spacing-xl);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.period-selector label {
+  font-weight: 600;
+  color: var(--gray-700);
+}
+
+.period-selector select {
+  max-width: 250px;
+}
+
+.chart-container {
+  margin-bottom: var(--spacing-xl);
+}
+
+.chart-container h3 {
+  color: var(--gray-800);
+  margin-bottom: var(--spacing-lg);
+  font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .period-selector {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .period-selector select {
+    width: 100%;
+    max-width: none;
+  }
+
+  .chart-container {
+    overflow-x: auto;
+  }
+}
